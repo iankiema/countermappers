@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - primary meta tags
+  -->
+  <title>CounterMappers Blog Website</title>
+  <meta name="title" content="CounterMappers Blog Website">
+
+  <!--
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets/images/Logo1.png" class="counterLogo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <h1>CounterMappers</h1>
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link hover-1" data-nav-toggler>About</a>
+          </li>
+
+          <li>
+            <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Projects</a>
+          </li>
+
+          <li>
+            <a href="#tags" class="navbar-link hover-1" data-nav-toggler>Services</a>
+          </li>
+
+          <li>
+            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Blogs</a>
+          </li>
+
+          <li>
+            <a href="#footer-contact" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+
+
+        <p class="copyright-text">
+          Copyright 2023 © Counter Mappers
+        </p>
+
+      </nav>
+
+      <a href="#footer-contact" class="btn btn-primary">Get In Touch</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+HERO
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="hero-container">
+
+          <div class="container-images">
+            <img class="mySlides fade" src="assets/images/background1.jpg"></img>
+            <img class="mySlides fade" src="assets/images/background2.jpg"></img>
+            <img class="mySlides fade" src="assets/images/background3.jpg"></img>
+            <img class="mySlides fade" src="assets/images/background4.jpg"></img>
+          </div>
+
+          <div class="container-mobile-images">
+            <img class="mySlidesMobile fade" src="assets/images/mobile1.jpg"></img>
+            <img class="mySlidesMobile fade" src="assets/images/mobile2.jpg"></img>
+            <img class="mySlidesMobile fade" src="assets/images/mobile3.jpg"></img>
+            <img class="mySlidesMobile fade" src="assets/images/mobile4.jpg"></img>
+          </div>
+
+          <div class="hero-content">
+
+            <h1 class="headline headline-1 section-title">
+              Counter <span class="span">Mappers</span>
+            </h1>
+
+            <p class="hero-text">
+              We engage in an interdisciplinary approach that integrates insights from radical geography, critical cartography, and social innovation that can help urbanists develop and adopt holistic practices that consider historical legacies, and colonial influences and ensure just futures that are meant to help the advancement of their respective communities.
+            </p>
+
+            <div class="input-wrapper">
+
+              <!-- <input type="email" name="email_address" placeholder="Type your email address" required
+                class="input-field" autocomplete="off"> -->
+
+              <button class="btn btn-primary">
+                <a href="#about" class="span">Read More</a>
+
+                <!-- <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon> -->
+              </button>
+
+            </div>
+
+          </div>
+
+
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+      <!--
+        #ABOUT
+      -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">About</span>
+          </h2>
+          <div class="card about-container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/about2.jpg" alt="Profile Image">
+                    </div>
+                    <div class="about-text">
+                        <h2>Counter Mappers</h2>
+                        <p>We engage in an interdisciplinary approach that integrates insights from radical geography, critical cartography, and social innovation that can help urbanists develop and adopt holistic practices that consider historical legacies, and colonial influences and ensure just futures that are meant to help the advancement of their respective communities. We mobilize the aforementioned theoretical frameworks to offer a critical lens that transcends beyond traditional space reading and understanding, to a more embedded approach that explores underlying power structures and dynamics that shapes our worldviews<span class="more" id="more1"> By assuming the very essence of counter-mapping, which strongly criticizes the biased ontology of maps in imposing new territories, conjuring borders where none existed, and homogenizing highly disparate parts inhabited by different communities, we adopt an intimate framework that transcribes the subjectivities and memories of the indigenous communities beyond the static form of contemporary maps. This is by exploring various forms of spatial representations using but not limited to animated maps, interpretive diagrams, caricatures, imageries, and rudimental mappings that are superimposed over actual oral narratives and memories captured from the respective communities. All these are done to help mobilize collective action that co-produces new territories of inclusion and resilience that continuously empower the vulnerable and already marginalized indigenous communities.</span> </p>
+                        <p id="readBtn" data-target="more1">Read more</p>
+                    </div>
+                </div>
+            </div>
+
+          <div class="card about-container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/chingz.jpeg" alt="Profile Image">
+                    </div>
+                    <div class="about-text">
+                        <h2>David Njenga</h2>
+                        <p>I am an Urbanist and a Ph.D. Researcher at Planning and Development (P&D) Research Unit, KU Leuven, Belgium. I am a Tutorial Fellow at the Department of Spatial Planning and Design, The Technical University of Kenya. I am also a Registered and Practicing Physical Planner in Kenya. My Ph.D. research combines critical mapping and community empowerment that focuses on the nexus between Critical Mapping, Indigenous communities, and Social Innovation/empowerment. The research aims to<span class="more" id="more2"> investigate whether and under which conditions mapping and its agency contribute to empowerment or not. This is done by focusing on three spectrums of Spatial Dynamics, Spatial Representation, and Collective Action. It critically questions the ontology of maps and mapping processes, their authorship, the power dynamics they exert, and what they actually do to the territory. It further explores embedded and alternative cartographic representation and literacy that can be mobilized to capture innovative and intelligent indigenous/localized knowledge systems that are empowering and lead to the socio-political transformation of local communities, against a backdrop of the rapidly urbanizing Coastal Kenya context. The research is anchored on two main theoretical frameworks of Critical Cartography, which offers an analytical framework to critically evaluate maps and mapping processes, and Social Innovation, which provides a robust operational framework that helps engage local communities and relevant stakeholders and set the stage for proactive socio-political transformation.</span> </p>
+                        <p id="readBtn" data-target="more2">Read more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+
+
+      <!--
+        - #FEATURED PROJECTS
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Featured Projects</span>
+          </h2>
+
+          <p class="section-text">
+            Featured and highly rated projects
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/kisiwani-three.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Kisiwani</a>
+
+                      <a href="#" class="span hover-2">#Mapping</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <span id="openBtn" data-index = '1' class="card-title hover-2">
+                      Kisiwani Island Project Participatory Mapping
+                    </span>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/Chingz cropped.jpg" width="48" height="48" loading="lazy" alt="David"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">David</p>
+
+                        <p class="card-subtitle">15 July 2023</p>
+                      </div>
+                    </div>
+
+                    <p id="openBtn" data-index="1" class="card-btn">Read more</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/Creek1.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <p id="openBtn" data-index="2" class="card-title hover-2">
+                      Mapping Spatialities in and around Mida Creek Area
+                    </p>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/Chingz cropped.jpg" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">David</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <p id="openBtn" data-index="2" class="card-btn">Read more</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/Coast1.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <p id="openBtn" data-index="3" class="card-title hover-2">
+                      Mapping Solidarity Networks in Mida Creek Area
+                    </p>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/Chingz cropped.jpg" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">David</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <p id="openBtn" data-index="3" class="card-btn">Read more</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/Agency1.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <p id="openBtn" data-index="4" class="card-title hover-2">
+                      Re-Writing History Through Cartographic Agency
+                    </p>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/Chingz cropped.jpg" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">David</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <p id="openBtn" data-index="4" class="card-btn">Read more</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-5.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/Chingz cropped.jpg" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="project-modal" id="proModal">
+
+          </div>
+
+          <div id="imageModal" class="modal-popup">
+            <span class="close-modal" id="closeImageModal">&times;</span>
+            <img class="modal-content" id="modalImage">
+          </div>
+
+
+
+          <a href="#" class="btn btn-secondary">
+            <span class="span">Show More Projects</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+         <!--
+        - #SERVICES
+      -->
+
+      <section class="tags" id="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">Services</span>
+          </h2>
+
+          <p class="section-text">
+            Services we offer
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="Travel">
+
+                <p class="btn-text">Community Engagement and Cartographic Empowerment</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag2.png" width="32" height="32" loading="lazy" alt="Culture">
+
+                <p class="btn-text">Spatial Data Collection and Documentation</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag3.png" width="32" height="32" loading="lazy" alt="Lifestyle">
+
+                <p class="btn-text">Alternative Critical Map Creation</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag4.png" width="32" height="32" loading="lazy" alt="Fashion">
+
+                <p class="btn-text">Critical Spatial Analysis</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag5.png" width="32" height="32" loading="lazy" alt="Food">
+
+                <p class="btn-text">Critical Spatial Visualizations and Representations
+                </p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag6.png" width="32" height="32" loading="lazy" alt="Space">
+
+                <p class="btn-text">Physical Planning Services
+                </p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag7.png" width="32" height="32" loading="lazy" alt="Animal">
+
+                <p class="btn-text">Capacity Building in Critical Mapping</p>
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!--
+        - #RECENT BLOGS
+      -->
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Recent Blogs</span>
+            </h2>
+
+            <p class="section-text">
+              Don't miss the latest blogs
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/blog2.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Journey into the Heart of Kisiwani Island: Unveiling the Living Maps of a Vibrant Community</a>
+                    </h3>
+
+                    <p class="card-text">
+                      As i prepared myself for a mini participatory mapping exercise with the village elders in Kisiwani Island, Kilifi, it dawned on me that the more i interact with the community, the more i have to re-learn so much!
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># KisiwaniMapping </a>
+
+                        <a href="#" class="span hover-2"># CommunityCartographers</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/blog4.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Unearthing the Spatial Violence: Land for Sale Signboards and Indigenous Communities</a>
+                    </h3>
+
+                    <p class="card-text">
+                      During one of my Iterative fieldwork, I encountered this signboard along the Kilifi-Malindi highway. This is just one of the many mushrooming signboards alerting market forces LAND FOR SALE!
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># SpatialViolence</a>
+
+                        <a href="#" class="span hover-2"># IndigenousCommunities</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Popular Blogs</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-1.jpg" width="64" height="64" loading="lazy"
+                        alt="Creating is a privilege but it’s also a gift" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Creating is a privilege but it’s also a gift</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-3.jpg" width="64" height="64" loading="lazy"
+                        alt="Every day, in every city and town across the country" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Every day, in every city and town across the country</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-4.jpg" width="64" height="64" loading="lazy"
+                        alt="Your voice, your mind, your story, your vision" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Your voice, your mind, your story, your vision</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+
+
+            <div class="card aside-card insta-card">
+
+              <a href="#" class="logo">
+                <h2>Counter Mappers</h2>
+              </a>
+
+              <p class="card-text">
+                Follow us on instagram
+              </p>
+
+              <ul class="insta-list">
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-1.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-2.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-3.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-4.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-5.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-6.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-7.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-8.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-9.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!--
+        - #TOPICS
+      -->
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                Hot topics
+              </h2>
+
+              <p class="card-text">
+                Don't miss out on the latest news about Travel tips, Hotels review, Food guide...
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-1.png" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Sport</span>
+
+                      <p class="slider-subtitle">38 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-2.png" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Travel</span>
+
+                      <p class="slider-subtitle">63 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-3.png" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Design</span>
+
+                      <p class="slider-subtitle">78 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-4.png" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Movie</span>
+
+                      <p class="slider-subtitle">125 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-5.png" width="507" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Lifestyle</span>
+
+                      <p class="slider-subtitle">78 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer id="footer-contact">
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <h3>Counter Mappers</h3>
+            </a>
+
+            <p class="footer-text">
+              When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
+              unknown prnoto sans took a galley and scrambled it to five centurie.
+            </p>
+
+            <p class="footer-list-title">Address</p>
+
+            <address class="footer-text address">
+              P.O. Box 52428 - 00200,<br>
+              Haile Selassie Avenue,<br>
+              Nairobi, Kenya
+            </address>
+            <br>
+
+            <p class="footer-list-title">Contact Us</p>
+
+            <address class="footer-text address">
+              Email: info@countermappers.ac.ke<br>
+              Tel: +254 716 322 425
+            </address>
+
+          </div>
+
+
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Get In Touch</p>
+
+            <p class="footer-text">
+              Need accurate and reliable critical mapping services? Contact us now to ensure precision and efficiency in all your mapping needs
+            </p>
+
+            <form action="">
+              <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div class="input-wrapper">
+                <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                  autocomplete="off">
+
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div class="input-wrapper">
+                <textarea name="comment" rows="10" class="textarea-field" placeholder="Leave a comment" required class="input-field"
+                  ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Get in touch
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+
+            </form>
+
+
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Copyright by <a href="#" class="copyright-link">CounterMappers.</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
