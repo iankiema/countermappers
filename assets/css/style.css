@@ -439,6 +439,7 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header.container {
+  width: 100%;
   height: 100vh;
 }
 
@@ -448,6 +449,7 @@ body.nav-active { overflow: hidden; }
   padding-block-start: calc(var(--section-padding) + 160px);
   position: relative;
   min-height: 100vh;
+  width: 100%;
 }
 
 .counterLogo {
@@ -1075,7 +1077,7 @@ width: 30%;
 
 
 /*-----------------------------------*\
-  #RECENT POST
+  #RECENT BLOGS
 \*-----------------------------------*/
 
 .recent-post .container {

@@ -125,6 +125,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {
     myIndex = 1
+    myIndex++;
   }
   x[myIndex-1].style.display = 'block';
   setTimeout(carousel, 4000)
@@ -138,9 +139,10 @@ function carouselMobile() {
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = 'none';
   }
-  myIndex++;
+  // myIndex++;
   if (myIndexMobile > x.length) {
     myIndex = 1
+    myIndex++;
   }
   x[myIndex-1].style.display = 'block';
   setTimeout(carouselMobile, 4000)
