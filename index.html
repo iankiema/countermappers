@@ -965,22 +965,22 @@ HERO
               For precise and dependable critical mapping solutions, reach out to us today. We specialize in ensuring accuracy and effectiveness across all your research-oriented mapping requirements.
             </p>
 
-            <form action="">
+            <form onsubmit="sendEmail(); reset(); return false; ">
               <div class="input-wrapper">
-              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+              <input id="name" type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
 
                 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
               </div>
 
               <div class="input-wrapper">
-                <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                <input id="email" type="email" name="email_address" placeholder="Emaill address" required class="input-field"
                   autocomplete="off">
 
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
               </div>
 
               <div class="input-wrapper">
-                <textarea name="comment" rows="10" class="textarea-field" placeholder="Leave a comment" required class="input-field"
+                <textarea id="comment" name="comment" rows="10" class="textarea-field" placeholder="Leave a comment" required class="input-field"
                   ></textarea>
               </div>
 
@@ -1056,7 +1056,7 @@ HERO
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!--
     - ionicon link
   -->

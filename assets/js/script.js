@@ -607,6 +607,31 @@ serviceButtons.forEach(button => {
 });
 
 
+const fname = document.getElementById('name');
+const email = document.getElementById('email');
+const comment = document.getElementById('comment');
+
+let ebody = `
+  <b>Name: </b>${fname.value}
+  <br>
+  <b>Email: </b>${email.value}
+  <br>
+  <b>Message: </b> ${comment.value}
+`
+
+//SEND EMAIL
+function sendEmail() {
+  Email.send({
+    SecureToken : "6f5e1304-e346-41e7-9c6b-840d7d5ef5c5",
+    To : 'taztechcyber@gmail.com',
+    From : 'taztechcyber@gmail.com',
+    Subject : "New contact form enquiry",
+    Body : ebody
+}).then(
+  message => alert(message)
+);
+}
+
 
 
 
