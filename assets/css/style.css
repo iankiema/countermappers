@@ -2035,6 +2035,10 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
   }
+
+  .blog-image {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 562px) {
