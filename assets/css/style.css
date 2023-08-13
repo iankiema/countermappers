@@ -2043,7 +2043,7 @@ textarea::placeholder {
 
 @media (max-width: 562px) {
   .hero-container{
-    height: 100vh;
+    height: 100%;
   }
 
   .container-mobile-images {

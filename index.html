@@ -965,7 +965,7 @@ HERO
               For precise and dependable critical mapping solutions, reach out to us today. We specialize in ensuring accuracy and effectiveness across all your research-oriented mapping requirements.
             </p>
 
-            <form onsubmit="sendEmail(); reset(); return false; ">
+            <form onsubmit="reset()" class="form-contact">
               <div class="input-wrapper">
               <input id="name" type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
 
@@ -984,7 +984,7 @@ HERO
                   ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary">Get in touch
+              <button id="submit" type="submit" class="btn btn-primary">Get in touch
                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
               </button>
 
