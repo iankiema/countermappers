@@ -440,7 +440,7 @@ body.nav-active { overflow: hidden; }
 
 .header.container {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .hero-bg { display: none; }
@@ -482,7 +482,7 @@ body.nav-active { overflow: hidden; }
 .hero .section-title { margin-block: 20px; }
 
 .hero .hero-text {
-  margin-block-end: 40px;
+  margin-block-end: 20px;
   color: whitesmoke;
 }
 
@@ -2042,8 +2042,28 @@ textarea::placeholder {
 }
 
 @media (max-width: 562px) {
+  .hero-container{
+    height: 100vh;
+  }
+
+  .container-mobile-images {
+    overflow: hidden;
+    width: 562px;
+    height: 768px;
+  }
+
+  .mySlidesMobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .hero-content {
-    width: 80%;
+    width: 90%;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
   }
 
   .counterLogo {
@@ -2052,7 +2072,7 @@ textarea::placeholder {
 
 
   .about .container {
-    margin-top: 60px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
   }
