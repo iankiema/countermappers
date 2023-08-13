@@ -448,11 +448,11 @@ HERO
 
 
 
-          <a href="#" class="btn btn-secondary">
-            <span class="span">Show More Projects</span>
+          <button id="showMoreButton" class="btn btn-secondary">
+            <span class="span" >Show More Projects</span>
 
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
+          </button>
 
         </div>
 
@@ -460,6 +460,24 @@ HERO
 
       </section>
 
+      <!---- Show More project Modal-->
+
+      <div id="showprojectModal" class="showcustom-modal">
+        <div class="showmodal-content">
+          <span class="showclose-modal" id="showcloseProjectModal">&times;</span>
+          <div class="showproject-container">
+            <div class="showproject-slider">
+              <div class="showproject-slides" id="showprojectSlides"></div>
+              <a class="showprev-slide" id="showprevSlide">&#10094;</a>
+              <a class="shownext-slide" id="shownextSlide">&#10095;</a>
+            </div>
+            <div class="showproject-info">
+              <h2 id="showprojectTitle"></h2>
+              <p id="showprojectContent"></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
          <!--
         - #SERVICES
@@ -483,6 +501,7 @@ HERO
                 <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="Travel">
 
                 <p class="btn-text">Community Engagement and Cartographic Empowerment</p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
@@ -491,6 +510,7 @@ HERO
                 <img src="./assets/images/tag2.png" width="32" height="32" loading="lazy" alt="Culture">
 
                 <p class="btn-text">Spatial Data Collection and Documentation</p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
@@ -499,6 +519,7 @@ HERO
                 <img src="./assets/images/tag3.png" width="32" height="32" loading="lazy" alt="Lifestyle">
 
                 <p class="btn-text">Alternative Critical Map Creation</p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
@@ -507,6 +528,7 @@ HERO
                 <img src="./assets/images/tag4.png" width="32" height="32" loading="lazy" alt="Fashion">
 
                 <p class="btn-text">Critical Spatial Analysis</p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
@@ -516,6 +538,7 @@ HERO
 
                 <p class="btn-text">Critical Spatial Visualizations and Representations
                 </p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
@@ -525,6 +548,7 @@ HERO
 
                 <p class="btn-text">Physical Planning Services
                 </p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
@@ -533,11 +557,15 @@ HERO
                 <img src="./assets/images/tag7.png" width="32" height="32" loading="lazy" alt="Animal">
 
                 <p class="btn-text">Capacity Building in Critical Mapping</p>
+                <button class="get-in-touch-btn">Get in Touch</button>
               </button>
             </li>
 
           </ul>
 
+        </div>
+        <div class="tags-container">
+          <!-- Tag buttons will be dynamically generated here -->
         </div>
       </section>
 
@@ -659,145 +687,6 @@ HERO
             </nav>
 
           </div>
-
-          <div class="post-aside grid-list">
-
-            <div class="card aside-card">
-
-              <h3 class="headline headline-2 aside-title">
-                <span class="span">Popular Blogs</span>
-              </h3>
-
-              <ul class="popular-list">
-
-                <li>
-                  <div class="popular-card">
-
-                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
-                      <img src="./assets/images/popular-post-1.jpg" width="64" height="64" loading="lazy"
-                        alt="Creating is a privilege but it’s also a gift" class="img-cover">
-                    </figure>
-
-                    <div class="card-content">
-
-                      <h4 class="headline headline-4 card-title">
-                        <a href="#" class="link hover-2">Creating is a privilege but it’s also a gift</a>
-                      </h4>
-
-                      <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
-
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="popular-card">
-
-                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
-                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
-                        alt="Being unique is better than being perfect" class="img-cover">
-                    </figure>
-
-                    <div class="card-content">
-
-                      <h4 class="headline headline-4 card-title">
-                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
-                      </h4>
-
-                      <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
-
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="popular-card">
-
-                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
-                      <img src="./assets/images/popular-post-3.jpg" width="64" height="64" loading="lazy"
-                        alt="Every day, in every city and town across the country" class="img-cover">
-                    </figure>
-
-                    <div class="card-content">
-
-                      <h4 class="headline headline-4 card-title">
-                        <a href="#" class="link hover-2">Every day, in every city and town across the country</a>
-                      </h4>
-
-                      <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
-
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="popular-card">
-
-                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
-                      <img src="./assets/images/popular-post-4.jpg" width="64" height="64" loading="lazy"
-                        alt="Your voice, your mind, your story, your vision" class="img-cover">
-                    </figure>
-
-                    <div class="card-content">
-
-                      <h4 class="headline headline-4 card-title">
-                        <a href="#" class="link hover-2">Your voice, your mind, your story, your vision</a>
-                      </h4>
-
-                      <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
-
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="popular-card">
-
-                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
-                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
-                        alt="Being unique is better than being perfect" class="img-cover">
-                    </figure>
-
-                    <div class="card-content">
-
-                      <h4 class="headline headline-4 card-title">
-                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
-                      </h4>
-
-                      <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
-
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
 
 
 
@@ -1057,7 +946,7 @@ HERO
             <p class="footer-list-title">Contact Us</p>
 
             <address class="footer-text address">
-              Email: info@countermappers.ac.ke<br>
+              Email: info@countermappers.co.ke<br>
               Tel: +254 716 322 425
             </address>
 
@@ -1106,7 +995,7 @@ HERO
         <div class="footer-bottom">
 
           <p class="copyright">
-            &copy; Copyright by <a href="#" class="copyright-link">CounterMappers.</a>
+            &copy; Copyright by <a href="#" class="copyright-link">CounterMappers 2023</a>
           </p>
 
           <ul class="social-list">

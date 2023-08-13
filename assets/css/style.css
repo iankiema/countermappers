@@ -1029,6 +1029,147 @@ body.nav-active { overflow: hidden; }
   max-height: 100%;
 }
 
+/*ShowMore projects Modal Css*/
+
+/* Styling for the modal background */
+.showcustom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the modal content */
+.showmodal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 90%;
+}
+
+/* Styling for the close button */
+.showclose-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styling for the project container */
+.showproject-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the project slider */
+.showproject-slider {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the project slides container */
+.showproject-slides {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 80vh;
+  margin-right: 20px;
+}
+
+/* Styling for the project slide images */
+.showproject-slides img {
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 100;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the prev and next slide buttons */
+.showprev-slide,
+.shownext-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+  color: #333;
+}
+
+.showprev-slide {
+  left: 10px;
+}
+
+.shownext-slide {
+  right: 10px;
+}
+
+/* Styling for the project info */
+.showproject-info {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styling for the headline */
+#showprojectTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the project content */
+#showprojectContent {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Styling for the dot container */
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling for the individual dot */
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.dot.active {
+  background-color: #717171;
+}
+
+/* Styling for disabling scrolling when modal is open */
+.disable-scroll {
+  overflow: hidden;
+}
+
+.zoomed {
+  transform: scale(1.5); /* Adjust the scale factor as needed */
+}
+
 
 
 /*-----------------------------------*\
@@ -1071,6 +1212,17 @@ body.nav-active { overflow: hidden; }
 width: 30%;
 }
 
+/* Service show more */
+.get-in-touch-btn {
+  transform: translateY(100%);
+  transition: max-height 0.3s ease-in-out;
+  display: none;
+}
+
+.tag-btn:hover .get-in-touch-btn.active {
+  display: block;
+  transform: translateY(0);
+}
 
 
 

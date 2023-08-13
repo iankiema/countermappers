@@ -492,8 +492,119 @@ readMoreButtons.forEach((button) => {
   button.addEventListener('click', toggleHiddenText);
 });
 
+//ShowMore project Modal
+// Add this to your existing JavaScript code
+const projectModal = document.getElementById("showprojectModal");
+const closeProjectModalBtn = document.getElementById("showcloseProjectModal");
+const projectSlides = document.getElementById("showprojectSlides");
+const prevSlideBtn = document.getElementById("showprevSlide");
+const nextSlideBtn = document.getElementById("shownextSlide");
+const projectTitle = document.getElementById("showprojectTitle");
+const projectContent = document.getElementById("showprojectContent");
 
+// Sample project data
+const project = {
+  id: "project1",
+  images: [
+    "./assets/images/Page_01.jpg",
+    "./assets/images/Page_02.jpg",
+    "./assets/images/Page_03.jpg",
+    "./assets/images/Page_04.jpg",
+    "./assets/images/Page_05.jpg",
+    "./assets/images/Page_06.jpg",
+    "./assets/images/Page_07.jpg",
+    "./assets/images/Page_08.jpg",
+    "./assets/images/Page_09.jpg",
+    "./assets/images/Page_10.jpg",
+    "./assets/images/Page_11.jpg",
+    // Add more image URLs
+  ],
+};
 
+// Function to open the project modal
+function openProjectModal() {
+  projectTitle.textContent = project.title;
+  projectContent.textContent = project.content;
+
+  // Create slide elements for each image
+  projectSlides.innerHTML = project.images
+    .map((image) => `<img src="${image}" alt="Project Image">`)
+    .join("");
+
+  projectModal.style.display = "block";
+}
+
+// Function to close the project modal
+function closeProjectModal() {
+  projectModal.style.display = "none";
+}
+
+// Slide functionality
+let showslideIndex = 1;
+
+function showSlide(n) {
+  if (n > project.images.length) {
+    showslideIndex = 1;
+  }
+  if (n < 1) {
+    showslideIndex = project.images.length;
+  }
+
+  const slides = projectSlides.getElementsByTagName("img");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[showslideIndex - 1].style.display = "block";
+}
+
+function changeSlide(n) {
+  showSlide((showslideIndex += n));
+}
+
+// Add event listeners
+prevSlideBtn.addEventListener("click", () => changeSlide(-1));
+nextSlideBtn.addEventListener("click", () => changeSlide(1));
+
+// Open the project modal when the "Show More Projects" button is clicked
+const showMoreButton = document.getElementById("showMoreButton");
+showMoreButton.addEventListener("click", openProjectModal);
+
+// Close the project modal when the close button is clicked
+closeProjectModalBtn.addEventListener("click", closeProjectModal);
+
+// Close the project modal when clicking outside the modal content
+window.addEventListener("click", (event) => {
+  if (event.target === projectModal) {
+    closeProjectModal();
+  }
+});
+
+function toggleImageZoom(image) {
+  image.classList.toggle("zoomed");
+}
+
+// Add event listener to each image to toggle zoom
+const showimages = projectSlides.getElementsByTagName("img");
+for (let i = 0; i < images.length; i++) {
+  showimages[i].addEventListener("click", function () {
+    toggleImageZoom(this);
+  });
+}
+
+const serviceButtons = document.querySelectorAll(".tag-btn");
+
+serviceButtons.forEach(button => {
+  const getInTouchButton = button.querySelector(".get-in-touch-btn");
+
+  button.addEventListener("mouseenter", () => {
+    getInTouchButton.style.transform = "translateY(0)";
+  });
+
+  button.addEventListener("mouseleave", () => {
+    getInTouchButton.style.transform = "translateY(100%)";
+  });
+});
 
 
 
