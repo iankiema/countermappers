@@ -2146,3 +2146,22 @@ textarea::placeholder {
     flex-direction: column;
   }
 }
+
+@media (max-width: 375px) {
+  .hero-container{
+    height: 90vh;
+    padding-bottom: 30px;
+  }
+
+  .container-mobile-images {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    height: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+}
