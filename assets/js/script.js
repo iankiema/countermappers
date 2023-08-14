@@ -124,7 +124,7 @@ function carousel() {
   }
   myIndex++;
   if (myIndex > x.length) {
-    myIndex = 1
+    myIndex = 0
     myIndex++;
   }
   x[myIndex-1].style.display = 'block';
@@ -634,7 +634,7 @@ let ebody = `
     Subject : "New contact form enquiry",
     Body : ebody
 }).then(
-  message => alert(message)
+ alert("Thank you for getting in touch with CounterMappers")
 );
 });
 
@@ -658,16 +658,16 @@ let ebody = `
 
 //SEND EMAIL
 
-  Email.send({
-    SecureToken : "6f5e1304-e346-41e7-9c6b-840d7d5ef5c5",
-    To : 'taztechcyber@gmail.com',
-    From : 'taztechcyber@gmail.com',
-    Subject : "New contact form enquiry",
-    Body : ebody
+Email.send({
+  SecureToken : "6f5e1304-e346-41e7-9c6b-840d7d5ef5c5",
+  To : 'taztechcyber@gmail.com',
+  From : 'taztechcyber@gmail.com',
+  Subject : "New contact form enquiry",
+  Body : ebody
 }).then(
-  message => alert(message)
+alert("Thank you for getting in touch with CounterMappers")
 );
-})
+});
 
 
 
