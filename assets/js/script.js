@@ -612,6 +612,8 @@ const email = document.getElementById('email');
 const comment = document.getElementById('comment');
 const submit = document.getElementsByClassName('form-contact')[0];
 
+console.log(fname.value)
+
 submit.addEventListener('submit', (e)=>{
   e.preventDefault();
   console.log("clicked")
@@ -624,49 +626,19 @@ let ebody = `
   <br>
   <b>Message: </b> ${comment.value}
 `
-
-//SEND EMAIL
-
-  Email.send({
-    SecureToken : "6f5e1304-e346-41e7-9c6b-840d7d5ef5c5",
-    To : 'taztechcyber@gmail.com',
-    From : 'taztechcyber@gmail.com',
-    Subject : "New contact form enquiry",
-    Body : ebody
-}).then(
- alert("Thank you for getting in touch with CounterMappers")
-);
-});
-
-const formname = document.getElementById('fname');
-const formemail = document.getElementById('femail');
-const formcomment = document.getElementById('fcomment');
-const formsubmit = document.getElementsByClassName('form-fcontact')[0];
-
-submit.addEventListener('submit', (e)=>{
-  e.preventDefault();
-  console.log("clicked")
-
-
-let ebody = `
-  <b>Name: </b>${formname.value}
-  <br>
-  <b>Email: </b>${formemail.value}
-  <br>
-  <b>Message: </b> ${formcomment.value}
-`
-
 //SEND EMAIL
 
 Email.send({
-  SecureToken : "6f5e1304-e346-41e7-9c6b-840d7d5ef5c5",
-  To : 'taztechcyber@gmail.com',
-  From : 'taztechcyber@gmail.com',
+  SecureToken: "0f6213a6-1cd2-4810-b452-ead3cd14689b",
+  To: "info@countermappers.co.ke",
+  From: "info@countermappers.co.ke",
   Subject : "New contact form enquiry",
   Body : ebody
 }).then(
 alert("Thank you for getting in touch with CounterMappers")
 );
+
+console.log('Email sent')
 });
 
 

@@ -1433,6 +1433,7 @@ width: 30%;
 .blog-title {
   font-size: 2.2rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .blog-image {
